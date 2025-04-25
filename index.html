@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem ipsum dolor</title>
     <meta name="description" content="Lorem ipsum dolor">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased bg-white">
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                <a href="https://kensingtonfell.github.io/lorem-ipsum-dolor-2025-04-25-69gjk" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     Logo
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transform transition duration-300">
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <button class="hidden md:block bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transform transition duration-300">
                     Get Started
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <a href="#features" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">Benefits</a>
+                <a href="#about" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">About</a>
+                <a href="#testimonials" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -32,69 +55,144 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-                        Lorem ipsum dolor
+                        Transform Your Digital Experience
                     </h1>
                     <p class="text-xl text-gray-600 mb-12 leading-relaxed">
-                        Lorem ipsum dolor
+                        Elevate your online presence with our cutting-edge platform. Experience seamless integration, powerful analytics, and unmatched performance that drives real results.
                     </p>
                     <div class="flex justify-center gap-4">
                         <button class="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transform transition duration-300">
-                            Get Started Now
+                            Start Free Trial
                         </button>
                         <button class="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold border border-gray-200 hover:shadow-xl hover:scale-105 transform transition duration-300">
-                            Learn More
+                            Watch Demo
                         </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-white">
+        <section id="features" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Features</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="p-8 rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="p-8 rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition duration-300 hover:scale-102">
                         <div class="w-12 h-12 bg-purple-100 rounded-lg mb-6 flex items-center justify-center">
                             <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Lorem ipsum dolor</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="text-xl font-semibold mb-4">Advanced Analytics</h3>
+                        <p class="text-gray-600">Gain deep insights into your performance with real-time analytics and customizable dashboards.</p>
                     </div>
-                    <!-- Repeat feature cards 2 more times -->
+                    <div class="p-8 rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition duration-300 hover:scale-102">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg mb-6 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Seamless Integration</h3>
+                        <p class="text-gray-600">Connect with your favorite tools and platforms effortlessly through our robust API.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition duration-300 hover:scale-102">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg mb-6 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Lightning Performance</h3>
+                        <p class="text-gray-600">Experience blazing-fast load times and optimal performance across all devices.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+        <section id="benefits" class="py-24 bg-gradient-to-br from-purple-50 via-white to-blue-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Benefits</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Key Benefits</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div class="flex items-start space-x-6">
+                    <div class="flex items-start space-x-6 hover:scale-102 transition-transform duration-300">
                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                             <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-4">Lorem ipsum dolor</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3 class="text-xl font-semibold mb-4">Increased Productivity</h3>
+                            <p class="text-gray-600">Boost your team's efficiency by up to 40% with our streamlined workflows and automation tools.</p>
                         </div>
                     </div>
-                    <!-- Repeat benefit items 3 more times -->
+                    <div class="flex items-start space-x-6 hover:scale-102 transition-transform duration-300">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Cost Reduction</h3>
+                            <p class="text-gray-600">Save up to 60% on operational costs through smart resource allocation and process optimization.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-white">
+        <section id="about" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <div class="bg-gradient-to-r from-purple-600 to-blue-500 rounded-3xl p-12 md:p-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Founded in 2020, our company emerged from a simple vision: to revolutionize how businesses handle their digital transformation. What started as a small team of passionate innovators has grown into a global leader in enterprise solutions, serving thousands of satisfied clients worldwide.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our mission is to empower organizations with cutting-edge technology that drives growth and innovation. We believe in transparency, continuous improvement, and putting our clients' success first. Our core values of innovation, integrity, and excellence guide everything we do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Client Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The analytics dashboard has transformed how we make decisions. We've seen a 45% increase in conversion rates since implementation."</p>
+                        <div class="font-semibold">Sarah Johnson</div>
+                        <div class="text-sm text-gray-500">Marketing Director, TechCorp</div>
+                    </div>
+                    <!-- Add 3 more testimonials following the same pattern -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition duration-300 p-6">
+                        <h3 class="text-xl font-semibold mb-4">How long does implementation take?</h3>
+                        <p class="text-gray-600">Our streamlined implementation process typically takes 2-4 weeks, depending on your specific needs and requirements. We provide dedicated support throughout the entire process.</p>
+                    </div>
+                    <!-- Add 4 more FAQ items -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="bg-gradient-to-r from-purple-600 to-blue-500 rounded-3xl p-12 md:p-16" style="background-image: url('https://source.unsplash.com/random/1920x1080/?technology')">
                     <div class="max-w-3xl mx-auto text-center">
-                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to get started?</h2>
-                        <p class="text-xl text-white/90 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to transform your business?</h2>
+                        <p class="text-xl text-white/90 mb-12">Join thousands of satisfied customers who have already taken their operations to the next level.</p>
                         <button class="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transform transition duration-300">
-                            Contact Us
+                            Schedule a Demo
                         </button>
                     </div>
                 </div>
@@ -108,17 +206,49 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Careers</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
+                        <li><a href="https://kensingtonfell.github.io/lorem-ipsum-dolor-2025-04-25-69gjk/blog.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://kensingtonfell.github.io/lorem-ipsum-dolor-2025-04-25-69gjk/terms.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms</a></li>
+                        <li><a href="https://kensingtonfell.github.io/lorem-ipsum-dolor-2025-04-25-69gjk/privacy.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy</a></li>
                     </ul>
                 </div>
-                <!-- Repeat footer columns 3 more times -->
+                <!-- Add 3 more footer columns -->
             </div>
             <div class="mt-12 pt-8 border-t border-gray-200">
                 <p class="text-center text-gray-600">&copy; 2024 Company Name. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
